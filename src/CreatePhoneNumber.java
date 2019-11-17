@@ -1,17 +1,5 @@
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class CreatePhoneNumber {
-
-    public static String createPhoneNumber(int [] numbers){
-
-       int [] array= numbers;
-        Arrays.toString(array);
-
-
-
-        String s="("+array[0]+""+array[1]+""+array[2]+") "+array[3]+""+array[4]+""+array[5]+"-"+array[6]+""+array[7]+""+array[8];
-
-
-        return s;}
+    public static String createPhoneNumber(int[] numbers) {
+        return String.format("(%d%d%d) %d%d%d-%d%d%d%d",numbers[0],numbers[1],numbers[2],numbers[3],numbers[4],numbers[5],numbers[6],numbers[7],numbers[8],numbers[9]);
+    }
 }
