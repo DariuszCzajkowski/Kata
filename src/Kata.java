@@ -1,10 +1,9 @@
 public class Kata {
     public static int findShort(String s) {
         String[] tempChar = s.split(" ");
-        int arrayLength = tempChar.length;
         int numberOfChar = tempChar[0].length();
-        for (int i = 0; i < arrayLength; i++) {
-            int counter = tempChar[i].length();
+        for (String value : tempChar) {
+            int counter = value.length();
             if (numberOfChar > counter) {
                 numberOfChar = counter;
 

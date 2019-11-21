@@ -6,7 +6,7 @@ public class JadenCase {
 
         if (phrase != null && phrase != "") {
             String[] split = phrase.split(" ");
-            String s = split[0];
+            String s;
             String z = "";
 
 
