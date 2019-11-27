@@ -10,15 +10,16 @@ public class TwoToOne {
         char[] tempInput = temp.toCharArray();
         Arrays.sort(tempInput);
         char s = tempInput[0];
-        String z = String.valueOf(s);
+        StringBuilder z = new StringBuilder(String.valueOf(s));
 
-        for (int i = 0; i < tempInput.length; i++) {
+        for (char c : tempInput) {
 
-            if (s != tempInput[i]) {
-                z += tempInput[i];
+            if (s != c) {
+                z.append(c);
             }
-            s = tempInput[i];
-           }
-       return z;
+            s = c;
+        }
+
+       return z.toString();
     }
 }

@@ -26,10 +26,14 @@ public class Main {
         SpinWords.spinWords("welcome to the jungle");
 
 
-        System.out.println("Write down word to check middle or middles letters");
+        // System.out.println("Write down word to check middle or middles letters");
         Scanner scanner = new Scanner(System.in);
         String word = scanner.nextLine();
-        System.out.println("Middle letter of word" + word + " is: " + MiddleCharacter.getMiddle(word));
+        // System.out.println("Middle letter of word" + word + " is: " + MiddleCharacter.getMiddle(word));*/
+        System.out.println("PigIt :( " + word + " ) = " + PigIt.pigIt(word));
+
+
+        //Challenge(new double[]{4.5, 3.0, 6.6, 7.3, 8.5, 87643.0, 32.0, 3.0, 4.0, 5.0});
 
 
     }
